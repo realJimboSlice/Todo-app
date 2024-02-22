@@ -113,3 +113,9 @@ h2 {
   background-color: #22272b;
   border: none;
 }
+
+.done:hover,
+.not-done:hover,
+.delete:hover {
+  background-color: #4f5154;
+}
