@@ -8,7 +8,7 @@ body,
 body {
   margin: 5%;
   font-family: sans-serif;
-  background-image: url("../svgs/background.svg");
+  background-image: url("./svgs/background.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
