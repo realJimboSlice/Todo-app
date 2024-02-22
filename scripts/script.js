@@ -80,9 +80,12 @@ function taskTemplate(task) {
       <div class="task">
           <h3>${task.title}</h3>
           <p>${task.description}</p>
-          <p>Priority: ${task.priority}</p>
-          <p>Deadline: ${task.dueDate.toLocaleDateString("en-GB")}</p>
-          
+          ${task.priority ? `<p>Priority: ${task.priority}</p>` : ""}
+          ${
+            task.dueDate && !isNaN(task.dueDate)
+              ? `<p>Deadline: ${task.dueDate.toLocaleDateString("en-GB")}</p>`
+              : ""
+          }
           ${
             task.status === "todo"
               ? `<button class="button done" onclick="moveToDone('${task.id}')">Done</button>`
