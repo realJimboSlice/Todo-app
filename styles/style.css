@@ -7,6 +7,11 @@ body,
 
 body {
   margin: 5%;
+  font-family: sans-serif;
+}
+
+h2 {
+  padding-left: 15px;
 }
 
 /* Grid layout for task lists */
@@ -16,15 +21,63 @@ body {
   gap: 25px;
 }
 
-.todolist-container .tasks-container {
+/* Colors and layouts in both lists */
+
+/* To do list */
+
+.todolist-container {
   background-color: #000;
   color: #b6c2cf;
   border-radius: 10px;
   padding: 20px;
+  padding-bottom: 10px;
 }
+
+.tasks-container {
+  margin: 15px 0;
+}
+
 .todolist-container .tasks-container .task {
   background-color: #22272b;
   border-radius: 10px;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
+
+.todolist-container .tasks-container .task:first-child {
+  background-color: #22272b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.todolist-container .tasks-container .task:nth-child(2) {
+  background-color: #22272b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.todolist-container .tasks-container .task:last-child {
+  background-color: #22272b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+#show-form {
+  background-color: #000;
+  border: none;
+  border-radius: 10px;
+  color: #b6c2cf;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px 0;
+  transition: background-color 0.25s;
+}
+
+#show-form:hover {
+  background-color: #646669;
+}
+
+/* Done list */
