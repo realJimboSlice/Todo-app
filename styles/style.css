@@ -11,7 +11,7 @@ body {
 }
 
 h2 {
-  padding-left: 15px;
+  padding-left: 17px;
 }
 
 /* Grid layout for task lists */
@@ -72,6 +72,8 @@ h2 {
   margin-bottom: 0;
 }
 
+/* + Add a task button */
+
 #show-form {
   background-color: #000;
   border: none;
@@ -85,8 +87,22 @@ h2 {
 }
 
 #show-form:hover {
-  background-color: #646669;
+  background-color: #4f5154;
   color: #cfdcea;
+}
+
+/* Submit button */
+#submit-button {
+  background-color: #579dff;
+  border: none;
+  color: #000;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#submit-button:hover {
+  background-color: #8abafe;
 }
 
 /* Done list */
