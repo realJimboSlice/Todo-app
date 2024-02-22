@@ -72,6 +72,48 @@ h2 {
   margin-bottom: 0;
 }
 
+/* Done list */
+
+.donelist-container {
+  background-color: #000;
+  color: #b6c2cf;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.tasks-container {
+  margin: 15px 0;
+}
+
+.donelist-container .tasks-container .task {
+  background-color: #22272b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.donelist-container .tasks-container .task:first-child {
+  background-color: #22272b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.donelist-container .tasks-container .task:nth-child(2) {
+  background-color: #22272b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.donelist-container .tasks-container .task:last-child {
+  background-color: #22272b;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
 /* + Add a task button */
 
 #show-form {
