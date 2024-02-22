@@ -57,7 +57,6 @@ let todoList = [];
 let doneList = [];
 
 // Tests start
-
 addTask("Køb ind", "Føtex har tilbud på underhyler", "High", "2023-12-31");
 console.log("This is the todo list", todoList);
 
@@ -71,7 +70,6 @@ const doneTask = new Task(
 );
 doneList.push(doneTask);
 console.log("This is the done list", doneList);
-
 // Tests end
 
 // Function to create task template
