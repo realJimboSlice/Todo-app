@@ -84,6 +84,8 @@ h2 {
   padding: 10px 0;
   transition: background-color 0.25s;
   transition: color 0.25s;
+  display: flex;
+  justify-content: center;
 }
 
 #show-form:hover {
@@ -105,4 +107,9 @@ h2 {
   background-color: #8abafe;
 }
 
-/* Done list */
+.done,
+.not-done,
+.delete {
+  background-color: #22272b;
+  border: none;
+}

@@ -88,7 +88,9 @@ function taskTemplate(task) {
           }
           ${
             task.status === "todo"
-              ? `<button class="button done" onclick="moveToDone('${task.id}')">Done</button>`
+              ? `<button class="button done" onclick="moveToDone('${task.id}')"><svg width="30px" height="30px" viewBox="2 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#b6c2cf" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg></button>`
               : `<button class="button not-done" onclick="moveToTodo('${task.id}')">Not Done</button>`
           }
           <button class="button delete" onclick="deleteTask('${
