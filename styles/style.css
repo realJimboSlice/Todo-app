@@ -1,0 +1,16 @@
+/* Reset padding on all elements */
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 5%;
+}
+
+/* Grid layout for task lists */
+.lists-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
