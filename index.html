@@ -31,18 +31,14 @@
         <div class="tasks-container"></div>
         <form id="task-form" style="display: none">
           <input type="text" id="title" placeholder="Title" required />
-          <textarea
-            id="description"
-            placeholder="Description"
-            required
-          ></textarea>
-          <select id="priority" required>
+          <textarea id="description" placeholder="Description"></textarea>
+          <select id="priority">
             <option value="">Select Priority</option>
             <option value="High">High</option>
             <option value="Medium">Medium</option>
             <option value="Low">Low</option>
           </select>
-          <input type="date" id="dueDate" required />
+          <input type="date" id="dueDate" />
           <button type="submit">Add task</button>
         </form>
         <button id="show-form">+ Add a task</button>
