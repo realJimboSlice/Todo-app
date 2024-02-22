@@ -79,9 +79,9 @@ function taskTemplate(task) {
   return `
       <div class="task">
           <h3>${task.title}</h3>
-          <p>Description: ${task.description}</p>
+          <p>${task.description}</p>
           <p>Priority: ${task.priority}</p>
-          <p>Due Date: ${task.dueDate.toLocaleDateString("en-GB")}</p>
+          <p>Deadline: ${task.dueDate.toLocaleDateString("en-GB")}</p>
           
           ${
             task.status === "todo"
