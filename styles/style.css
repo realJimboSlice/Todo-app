@@ -74,10 +74,12 @@ h2 {
   width: 100%;
   padding: 10px 0;
   transition: background-color 0.25s;
+  transition: color 0.25s;
 }
 
 #show-form:hover {
   background-color: #646669;
+  color: #cfdcea;
 }
 
 /* Done list */
