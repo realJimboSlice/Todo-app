@@ -64,8 +64,8 @@ console.log("This is the todo list", todoList);
 const doneTask = new Task(
   crypto.randomUUID(),
   "Færdiggør projekt",
-  "Aflever Todo APP kl. 23:59",
-  "Low",
+  "Aflever Todo App kl. 23:59",
+  "High",
   "2024-02-22",
   "done"
 );
