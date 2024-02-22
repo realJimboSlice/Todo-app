@@ -52,23 +52,14 @@ h2 {
 }
 
 .todolist-container .tasks-container .task:first-child {
-  background-color: #22272b;
-  border-radius: 10px;
-  padding: 15px;
   margin-bottom: 0;
 }
 
 .todolist-container .tasks-container .task:nth-child(2) {
-  background-color: #22272b;
-  border-radius: 10px;
-  padding: 15px;
   margin-top: 15px;
 }
 
 .todolist-container .tasks-container .task:last-child {
-  background-color: #22272b;
-  border-radius: 10px;
-  padding: 15px;
   margin-bottom: 0;
 }
 
@@ -94,29 +85,20 @@ h2 {
 }
 
 .donelist-container .tasks-container .task:first-child {
-  background-color: #22272b;
-  border-radius: 10px;
-  padding: 15px;
   margin-bottom: 0;
 }
 
 .donelist-container .tasks-container .task:nth-child(2) {
-  background-color: #22272b;
-  border-radius: 10px;
-  padding: 15px;
   margin-top: 15px;
 }
 
 .donelist-container .tasks-container .task:last-child {
-  background-color: #22272b;
-  border-radius: 10px;
-  padding: 15px;
   margin-bottom: 0;
 }
 
 /* + Add a task button */
 
-#show-form {
+.show-form {
   background-color: #000;
   border: none;
   border-radius: 10px;
@@ -130,13 +112,13 @@ h2 {
   justify-content: center;
 }
 
-#show-form:hover {
+.show-form:hover {
   background-color: #4f5154;
   color: #cfdcea;
 }
 
 /* Submit button */
-#submit-button {
+.submit-button {
   background-color: #579dff;
   border: none;
   color: #000;
@@ -145,7 +127,7 @@ h2 {
   padding: 10px;
 }
 
-#submit-button:hover {
+.submit-button:hover {
   background-color: #8abafe;
 }
 

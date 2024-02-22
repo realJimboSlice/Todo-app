@@ -25,32 +25,33 @@ function addTask(title, description, priority, dueDate) {
 }
 
 // Event listener to show form when clicked
-document.getElementById("show-form").addEventListener("click", function () {
-  document.getElementById("task-form").style.display = "block";
-  this.style.display = "none";
+document.querySelectorAll(".show-form").forEach(function (button) {
+  button.addEventListener("click", function () {
+    this.nextElementSibling.style.display = "block";
+    this.style.display = "none";
+  });
 });
 
 // Event listener to add task on form submit
-document
-  .getElementById("task-form")
-  .addEventListener("submit", function (event) {
+document.querySelectorAll(".task-form").forEach(function (form) {
+  form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const title = document.getElementById("title").value;
-    const description = document.getElementById("description").value;
-    const priority = document.getElementById("priority").value;
-    const dueDate = document.getElementById("dueDate").value;
+    const title = this.querySelector(".title").value;
+    const description = this.querySelector(".description").value;
+    const priority = this.querySelector(".priority").value;
+    const dueDate = this.querySelector(".dueDate").value;
 
     addTask(title, description, priority, dueDate);
 
-    event.target.reset();
+    this.reset();
 
-    document.getElementById("task-form").style.display = "none";
-
-    document.getElementById("show-form").style.display = "block";
+    this.style.display = "none";
+    this.previousElementSibling.style.display = "block";
 
     displayTasks(todoList, doneList);
   });
+});
 
 // Lists that contain all the tasks
 let todoList = [];
