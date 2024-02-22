@@ -122,6 +122,7 @@ h2 {
 }
 
 /* Submit button */
+
 .submit-button {
   background-color: #579dff;
   border: none;
@@ -134,6 +135,8 @@ h2 {
 .submit-button:hover {
   background-color: #8abafe;
 }
+
+/* Done, Not Done, Delete buttons */
 
 .done,
 .not-done,
@@ -148,6 +151,8 @@ h2 {
   background-color: #4f5154;
 }
 
+/* Form */
+
 .task-form input,
 .task-form textarea,
 .task-form select {
@@ -161,4 +166,11 @@ h2 {
 
 .task-form textarea {
   height: 100px;
+}
+
+.task-form input::placeholder,
+.task-form textarea::placeholder,
+.task-form select::placeholder {
+  padding-top: 3px;
+  padding-left: 3px;
 }
