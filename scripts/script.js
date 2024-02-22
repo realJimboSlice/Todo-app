@@ -87,15 +87,15 @@ function taskTemplate(task) {
           }
           ${
             task.status === "todo"
-              ? `<button class="button done" onclick="moveToDone('${task.id}')"><svg width="30px" height="30px" viewBox="2 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              ? `<button class="button done" title="Move task to Done" onclick="moveToDone('${task.id}')"><svg width="30px" height="30px" viewBox="2 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 13.3636L8.03559 16.3204C8.42388 16.6986 9.04279 16.6986 9.43108 16.3204L19 7" stroke="#b6c2cf" stroke-linecap="round" stroke-linejoin="round"/>
               </svg></button>`
-              : `<button class="button not-done" onclick="moveToTodo('${task.id}')"><svg width="30px" height="30px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              : `<button class="button not-done" title="Move task back to To Do" onclick="moveToTodo('${task.id}')"><svg width="30px" height="30px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14 21.4199H9C7.14348 21.4199 5.36302 20.6824 4.05026 19.3696C2.73751 18.0569 2 16.2764 2 14.4199C2 12.5634 2.73751 10.783 4.05026 9.47021C5.36302 8.15746 7.14348 7.41992 9 7.41992H22" stroke="#b6c2cf" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M18 11.4199L22 7.41992L18 3.41992" stroke="#b6c2cf" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg></button>`
           }
-          <button class="button delete" onclick="deleteTask('${
+          <button class="button delete" title="Delete the task" onclick="deleteTask('${
             task.id
           }')"><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.99997 8H6.5M6.5 8V18C6.5 19.1046 7.39543 20 8.5 20H15.5C16.6046 20 17.5 19.1046 17.5 18V8M6.5 8H17.5M17.5 8H19M9 5H15M9.99997 11.5V16.5M14 11.5V16.5" stroke="#b6c2cf" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
       </div>
